@@ -1,6 +1,6 @@
 
 public class MusicStaff {
-	int[][] data = new int[12][20];
+	int[][] data = new int[13][20];
 	public void toggleNote(int x, int y) {
 		if(this.data[y][x] == 1) {
 			this.data[y][x] = 0;
@@ -14,12 +14,9 @@ public class MusicStaff {
 	public int[] print() {
 		int[] retval = new int[20];
 		for(int i = 0; i < 20; i ++) {
-			for(int j = 0; j < 12; j ++) {
+			for(int j = 0; j < 13; j ++) {
 				if(this.data[j][i] == 1) {
 					retval[i] = 6 - j;
-					if(retval[i] <= 0) {
-						retval[i] --;
-					}
 				}
 			}
 		}

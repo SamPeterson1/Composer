@@ -22,7 +22,7 @@ public class CCanvas extends Canvas{
 		image = new BufferedImage(this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_ARGB);
 		g = image.getGraphics();	
 		for(int i = 0; i < 20; i ++) {
-			for(int j = 0; j < 12; j ++) {
+			for(int j = 0; j < 13; j ++) {
 				if(staff.getNote(i, j) == 1) {
 					g.setColor(Color.BLACK);
 					g.fillRect(i * 100 + 50 , j * 30 + 50, 100, 30);
@@ -37,6 +37,7 @@ public class CCanvas extends Canvas{
 		g.drawImage(print, 1000, 500, 200, 200, null);
 		g.setColor(Color.BLUE);
 		g.drawLine(50, 230, 2050, 230);
+		g.drawLine(50, 260, 2050, 260);
 		g.dispose();
 		g = this.getGraphics();
 		g.drawImage(image, 0, 0, null); 

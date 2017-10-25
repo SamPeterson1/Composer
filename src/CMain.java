@@ -20,7 +20,7 @@ public class CMain {
 						for(int i1 = 0; i1 < 20; i1 ++) {
 							System.out.print(i[i1] + ", ");
 						}
-					} else if(x / 100 <= 19 & x / 100 >= 0 & y / 30 >= 0 & y / 30 <= 11){
+					} else if(x / 100 <= 19 & x / 100 >= 0 & y / 30 >= 0 & y / 30 <= 12){
 						staff.toggleNote(x / 100, y / 30);
 					} else {
 						System.out.println(y / 30);
